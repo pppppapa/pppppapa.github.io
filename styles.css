@@ -1,0 +1,104 @@
+body {
+  background: rgb(58, 58, 58);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+header {
+  background: black;
+  background-image: url("imgs/auc.jpg");
+  background-size: 100%;
+  background-position: center;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  margin-top: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .mobile {
+  display: none;
+}
+header .logo a {
+  background-image: url("imgs/happy-new-year-4718894.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 140px;
+  position: relative;
+  text-indent: -99999px;
+  top: -90px;
+  width: 300px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 720px) {
+  header {
+    height: 200px;
+  }
+  header .logo a {
+    background-size: 60%;
+    height: 80px;
+    left: 60px;
+    top: -50px;
+  }
+  header .mobile {
+    display: inline-block;
+  }
+  header .desktop {
+    display: none;
+  }
+}
+
+/* features */
+
+.features {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.features figure {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+.features figure img {
+  border-radius: 50px;
+  border: 1px solid white;
+  box-shadow: gray 0 0 10px;
+  width: 200px;
+}
+
+/* FOOTER */
+
+footer {
+  background: black;
+  color: gray;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-align: center;
+}
